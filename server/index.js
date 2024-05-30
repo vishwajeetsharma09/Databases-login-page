@@ -6,7 +6,7 @@ const RegisterModel = require("./models/Register");
 const app = express();
 app.use(
   cors({
-    origin: [""],
+    origin: ["https://databases-login-page-ykft.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
