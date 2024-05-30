@@ -2,7 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const RegisterModel = require("./models/Register");
+const cors=require("cors");
+const corsOptions ={
+   origin:'*', 
+   credentials:true,            
+   optionSuccessStatus:200,
+}
 
+app.use(cors(corsOptions));
 const app = express();
 app.use(
   cors({
