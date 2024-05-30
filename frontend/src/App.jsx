@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-
+Access-Control-Allow-Origin: *
 function App() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
