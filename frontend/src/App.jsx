@@ -11,7 +11,11 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("register", { name, email, password })
+      .post("https://databases-login-page.vercel.app/register", {
+        name,
+        email,
+        password,
+      })
       .then((result) => console.log(result))
       .catch((err) => console.log(err));
   };
